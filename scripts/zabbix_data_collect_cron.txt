@@ -1,0 +1,2 @@
+# Zabbix Data Collectors
+* * * * * /usr/local/zabbix/scripts/data_collect.sh

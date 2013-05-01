@@ -1,4 +1,4 @@
-These files are for extending and customizing various portions of the Zabbix Open Source Monitoring System.
+These files are for extending and customizing various portions of the Zabbix Open Source Monitoring System for use with AIX, PowerVM, and Power Systems.
 
 Here you will find the following:
 

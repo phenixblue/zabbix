@@ -1,0 +1,27 @@
+# Zabbix Regular Expressions for Custom LLD Monitoring
+
+
+These regular expressions are required for the custom LLD monitoring to function.
+
+Add them under "Administration -> General -> Regular Expressions"
+
+# AIX_HARD_DISK_DISCOVERY
+
+	- Name: AIX_HARD_DISK_DISCOVERY
+	- Expressions:
+	
+		- ^(scsi|iscsi|vscsi)$
+			
+		- Expected results: Result is TRUE
+		- Case sensative: No
+		
+# AIX_VETH_ALL_DISCOVERY
+
+	- Name: AIX_VETH_ALL_DISCOVERY
+	- Expressions:
+	
+		- ^(Virtual.*.Ethernet.*|sea)$
+			
+		- Expected results: Result is TRUE
+		- Case sensative: No
+

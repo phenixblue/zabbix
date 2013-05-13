@@ -2,8 +2,12 @@ These files are for extending and customizing various portions of the Zabbix Ope
 
 Here you will find the following:
 
-Custom Templates
-Custom User Parameters
-Custom Scripts (LLD)
-Custom Scripts (General)
+Custom Templates -> /templates/zbx_aix_template.xml
+Custom Regular Expressions -> /templates/zbx_aix_lld_regex.txt
+Custom User Parameters -> /conf/custom_userparams.conf
+Custom Scripts (LLD) -> /scripts/
+Custom Scripts (General) - /scripts/
+
+
+
 

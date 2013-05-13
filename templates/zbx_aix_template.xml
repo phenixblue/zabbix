@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2013-05-01T18:50:46Z</date>
+    <date>2013-05-13T03:05:46Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -1681,7 +1681,7 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <filter>{#HDISKTYPE}:@Hard disk for discovery</filter>
+                    <filter>{#HDISKTYPE}:@AIX_HARD_DISK_DISCOVERY</filter>
                     <lifetime>2</lifetime>
                     <description>Discovery ofhard disks of different types as defined in global regular expression &quot;Hard disks for discovery&quot;.</description>
                     <item_prototypes>
@@ -2303,7 +2303,7 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <filter>{#VETHTYPE}:@VETH_ALL</filter>
+                    <filter>{#VETHTYPE}:@AIX_VETH_ALL_DISCOVERY</filter>
                     <lifetime>2</lifetime>
                     <description>Discovery ofhard disks of different types as defined in global regular expression &quot;Hard disks for discovery&quot;.</description>
                     <item_prototypes>
@@ -2731,7 +2731,7 @@
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>{Template OS AIX:net.veth.max_alloc_buff_huge[{#VETHNAME}].last(0)}&gt;{Template OS AIX:net.veth.min_buff_huge[{#VETHNAME}].last(0)}</expression>
-                            <name>Pre-allocated memory buffers (HUGE) are low for  {#VETHNAME}</name>
+                            <name>Allocated memory buffers (HUGE) are low for  {#VETHNAME}</name>
                             <url/>
                             <status>0</status>
                             <priority>2</priority>
@@ -2740,7 +2740,7 @@
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template OS AIX:net.veth.max_alloc_buff_large[{#VETHNAME}].last(0)}&gt;{Template OS AIX:net.veth.min_buff_large[{#VETHNAME}].last(0)}</expression>
-                            <name>Pre-allocated memory buffers (LARGE) are low for  {#VETHNAME}</name>
+                            <name>Allocated memory buffers (LARGE) are low for  {#VETHNAME}</name>
                             <url/>
                             <status>0</status>
                             <priority>2</priority>
@@ -2749,7 +2749,7 @@
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template OS AIX:net.veth.max_alloc_buff_med[{#VETHNAME}].last(0)}&gt;{Template OS AIX:net.veth.min_buff_med[{#VETHNAME}].last(0)}</expression>
-                            <name>Pre-allocated memory buffers (MEDIUM) are low for  {#VETHNAME}</name>
+                            <name>Allocated memory buffers (MEDIUM) are low for  {#VETHNAME}</name>
                             <url/>
                             <status>0</status>
                             <priority>2</priority>
@@ -2758,7 +2758,7 @@
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template OS AIX:net.veth.max_alloc_buff_small[{#VETHNAME}].last(0)}&gt;{Template OS AIX:net.veth.min_buff_small[{#VETHNAME}].last(0)}</expression>
-                            <name>Pre-allocated memory buffers (SMALL) are low for  {#VETHNAME}</name>
+                            <name>Allocated memory buffers (SMALL) are low for  {#VETHNAME}</name>
                             <url/>
                             <status>0</status>
                             <priority>2</priority>
@@ -2767,7 +2767,7 @@
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template OS AIX:net.veth.max_alloc_buff_tiny[{#VETHNAME}].last(0)}&gt;{Template OS AIX:net.veth.min_buff_tiny[{#VETHNAME}].last(0)}</expression>
-                            <name>Pre-allocated memory buffers (TINY) are low for  {#VETHNAME}</name>
+                            <name>Allocated memory buffers (TINY) are low for  {#VETHNAME}</name>
                             <url/>
                             <status>0</status>
                             <priority>2</priority>
